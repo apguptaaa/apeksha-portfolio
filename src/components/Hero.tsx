@@ -1,5 +1,6 @@
-import { ArrowRight, Briefcase, ChevronDown, Code, Github, Linkedin, Mail, Smartphone, User } from 'lucide-react';
+import { ArrowRight, Briefcase, ChevronDown, Code, Github, Linkedin, Mail, Smartphone } from 'lucide-react';
 import { profile, socialLinks } from '../data/portfolioData';
+import profileImg from '../assets/profile.jpg';
 
 interface HeroProps {
   onPlaceholderClick: (message: string) => void;
@@ -52,9 +53,13 @@ export default function Hero({ onPlaceholderClick }: HeroProps) {
                 href={social.href}
                 className="icon-btn"
                 aria-label={social.label}
+                target={social.href !== '#' ? '_blank' : undefined}
+                rel={social.href !== '#' ? 'noopener noreferrer' : undefined}
                 onClick={(e) => {
-                  e.preventDefault();
-                  onPlaceholderClick(`Add your ${social.label} link here.`);
+                  if (social.href === '#') {
+                    e.preventDefault();
+                    onPlaceholderClick(`Add your ${social.label} link here.`);
+                  }
                 }}
               >
                 {SOCIAL_ICONS[social.icon]}
@@ -69,8 +74,7 @@ export default function Hero({ onPlaceholderClick }: HeroProps) {
 
           <div className="avatar-ring">
             <div className="avatar">
-              <User aria-hidden="true" />
-              <span className="ph">Your profile photo</span>
+              <img src={profileImg} alt="Profile" className="profile-img" />
             </div>
           </div>
 

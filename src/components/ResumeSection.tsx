@@ -1,10 +1,11 @@
 import { Download, FileText } from 'lucide-react';
+import resumePdf from '../assets/Apeksha_Gupta.pdf';
 
 interface ResumeSectionProps {
   onPlaceholderClick: (message: string) => void;
 }
 
-export default function ResumeSection({ onPlaceholderClick }: ResumeSectionProps) {
+export default function ResumeSection({ onPlaceholderClick: _onPlaceholderClick }: ResumeSectionProps) {
   return (
     <section id="resume" aria-labelledby="resume-title">
       <div className="container">
@@ -18,18 +19,14 @@ export default function ResumeSection({ onPlaceholderClick }: ResumeSectionProps
             one neatly formatted document.
           </p>
           <a
-            href="#"
+            href={resumePdf}
+            download="Apeksha_Gupta_Resume.pdf"
             className="btn btn-primary"
-            onClick={(e) => {
-              e.preventDefault();
-              onPlaceholderClick('Add your resume PDF file to enable the download.');
-            }}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <Download /> Download Resume
           </a>
-          <span className="resume-note ph">
-            Link this button to your resume file (e.g., Apeksha-Gupta-Resume.pdf)
-          </span>
         </div>
       </div>
     </section>

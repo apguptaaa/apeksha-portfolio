@@ -17,7 +17,7 @@ export default function Certifications() {
           <p className="section-desc">Certifications, awards, and accomplishments — add yours below.</p>
         </div>
 
-        <div className="certs-grid">
+        <div className={`certs-grid ${certifications.length === 1 ? 'grid-1' : certifications.length === 2 ? 'grid-2' : ''}`}>
           {certifications.map((cert, i) => (
             <article className="card cert-card reveal" key={cert.title} style={{ ['--d' as string]: `${i * 0.1}s` }}>
               <div className="cert-icon">{CERT_ICONS[cert.icon]}</div>

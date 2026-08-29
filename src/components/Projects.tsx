@@ -17,7 +17,7 @@ export default function Projects({ onPlaceholderClick }: ProjectsProps) {
           </p>
         </div>
 
-        <div className="projects-grid">
+        <div className={`projects-grid ${projects.length === 1 ? 'grid-1' : projects.length === 2 ? 'grid-2' : ''}`}>
           {projects.map((project, i) => (
             <article className="card project-card reveal" key={project.title + i} style={{ ['--d' as string]: `${i * 0.1}s` }}>
               <div className="project-thumb">
