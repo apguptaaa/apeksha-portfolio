@@ -12,6 +12,7 @@ import Projects from './components/Projects';
 import ResumeSection from './components/ResumeSection';
 import Skills from './components/Skills';
 import Toast from './components/Toast';
+import CustomCursor from './components/CustomCursor';
 import { useScrollReveal } from './hooks/useScrollReveal';
 import { useTheme } from './hooks/useTheme';
 
@@ -60,6 +61,7 @@ export default function App() {
       <Footer onPlaceholderClick={showToast} />
       <BackToTop />
       <Toast message={toastMessage} show={toastShow} />
+      <CustomCursor />
     </>
   );
 }

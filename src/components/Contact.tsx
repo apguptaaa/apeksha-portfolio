@@ -65,8 +65,10 @@ export default function Contact({ onPlaceholderClick, onToast }: ContactProps) {
                   <a
                     href={link.href}
                     className="contact-item"
+                    target={link.href.startsWith('http') ? '_blank' : undefined}
+                    rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                     onClick={(e) => {
-                      if (link.value.startsWith('your.') || link.href === '#' || link.href === 'tel:') {
+                      if (link.href === '#') {
                         e.preventDefault();
                         onPlaceholderClick(`Add your ${link.label.toLowerCase()} here.`);
                       }

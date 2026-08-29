@@ -14,152 +14,122 @@ import type {
 export const profile = {
   name: 'Apeksha',
   surname: 'Gupta',
-  role: 'Web Developer',
+  role: 'Software Developer | Software Engineer',
   company: 'Ubitech Solutions',
-  tagline: 'Building modern, responsive, and user-focused web experiences.',
+  tagline: 'Designing and developing responsive web applications with a focus on UI implementation and API integration.',
   intro:
-    "I'm a Web Developer at Ubitech Solutions, crafting clean, high-quality websites and web applications that feel fast, work on every device, and put real user needs first.",
+    "I'm a Software Developer with 1+ year of professional experience designing and developing web applications using Angular, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Node.js, and REST APIs. Experienced in frontend and backend development, responsive UI implementation, API integration, and working with relational databases including MySQL and PostgreSQL.",
 };
 
 export const aboutParagraphs: string[] = [
-  "I'm Apeksha Gupta, a Web Developer currently working at Ubitech Solutions. I enjoy turning ideas into polished, responsive websites and web applications — the kind that are pleasant to use, perform well, and are easy to maintain.",
-  'My approach is simple: understand the problem first, write clean and reliable code, and pay attention to the small details that make an interface feel right. I care deeply about responsiveness, usability, and quality — building experiences that work well for everyone, on every device.',
-  "I'm genuinely curious about the web and enjoy exploring new tools and technologies to keep sharpening my craft. My goal is to keep growing as a developer and to take on work that is meaningful, well-built, and truly user-focused.",
+  "I'm Apeksha Gupta, a Software Developer currently working as a Software Engineer at Ubitech Solutions, contributing to HRMS software development using Angular, AdonisJS, TypeScript, and MySQL.",
+  "I have a strong understanding of web application development, debugging, Git-based version control, and database-driven applications. I enjoy turning ideas into polished, responsive user interfaces with a focus on usability and consistent application behavior.",
+  "I am seeking a Software Developer opportunity in an MNC where I can contribute to scalable applications and continue expanding my technical expertise."
 ];
 
 export const quickFacts: QuickFact[] = [
-  { icon: 'briefcase', label: 'Role', value: 'Web Developer' },
+  { icon: 'briefcase', label: 'Role', value: 'Software Developer' },
   { icon: 'building-2', label: 'Company', value: 'Ubitech Solutions' },
-  { icon: 'map-pin', label: 'Location', value: 'City, Country' },
-  { icon: 'target', label: 'Focus', value: 'Responsive & user-friendly web' },
+  { icon: 'map-pin', label: 'Location', value: 'Gwalior, Madhya Pradesh' },
+  { icon: 'target', label: 'Focus', value: 'Full-Stack Development' },
 ];
 
 export const skills: Skill[] = [
   {
     icon: 'layout-template',
     title: 'Frontend Development',
-    description: 'Crafting responsive, accessible, and pixel-conscious interfaces with clean, maintainable code.',
-    items: ['Skill 01', 'Skill 02', 'Skill 03', 'Skill 04'],
+    description: 'Crafting responsive, accessible, and clean interfaces.',
+    items: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'Angular', 'React', 'Tailwind CSS'],
   },
   {
     icon: 'server',
     title: 'Backend Development',
-    description: 'Building the logic and APIs that power reliable, well-structured web applications.',
-    items: ['Skill 01', 'Skill 02', 'Skill 03', 'Skill 04'],
+    description: 'Building robust backend services and APIs.',
+    items: ['Node.js', 'AdonisJS', 'REST APIs'],
   },
   {
     icon: 'database',
     title: 'Databases',
-    description: 'Designing and working with structured data that keeps applications consistent and fast.',
-    items: ['Skill 01', 'Skill 02', 'Skill 03'],
+    description: 'Designing and working with structured data.',
+    items: ['MySQL', 'PostgreSQL'],
   },
   {
     icon: 'wrench',
     title: 'Tools & Technologies',
-    description: 'The everyday tooling that keeps my workflow smooth, collaborative, and productive.',
-    items: ['Tool 01', 'Tool 02', 'Tool 03', 'Tool 04'],
-  },
-  {
-    icon: 'sparkles',
-    title: 'Other Skills',
-    description: 'Complementary strengths — communication, problem-solving, and teamwork — that make me a better developer.',
-    items: ['Skill 01', 'Skill 02', 'Skill 03'],
-  },
+    description: 'The tools I use for source control and debugging.',
+    items: ['Git', 'GitHub', 'Visual Studio Code', 'Postman', 'MySQL Workbench'],
+  }
 ];
 
 export const experience: ExperienceItem[] = [
   {
-    role: 'Web Developer',
-    company: 'Ubitech Solutions',
+    role: 'Software Engineer',
+    company: 'Ubitech Solutions Pvt. Ltd.',
     current: true,
-    dateRange: 'Joining date — Present',
-    location: 'Location / Remote',
+    dateRange: 'July 2025 — Present',
+    location: 'Gwalior',
     responsibilities: [
-      'Describe a core responsibility — what you build and own day to day.',
-      'Describe another key responsibility or area you contribute to.',
-      'Describe how you collaborate with your team or clients.',
+      'Developed and maintained web application interfaces using Angular, TypeScript, HTML, CSS, and Tailwind CSS.',
+      'Designed and implemented responsive user interfaces with a focus on usability and consistent application behavior.',
+      'Integrated frontend applications with REST APIs for retrieving, submitting, and updating application data.',
+      'Used TypeScript to develop reusable and maintainable frontend functionality.',
+      'Collaborated with backend services built using AdonisJS and Node.js.',
+      'Worked with MySQL databases for application data and database-driven functionality.',
+      'Tested and troubleshooted APIs using Postman and resolved frontend and integration-related issues.'
     ],
-    technologies: ['Tech 01', 'Tech 02', 'Tech 03', 'Tech 04'],
+    technologies: ['Angular', 'TypeScript', 'Tailwind CSS', 'Node.js', 'AdonisJS', 'MySQL', 'Git'],
     achievements: [
-      'Highlight a major contribution — a feature, improvement, or delivery.',
-      'Highlight an achievement or measurable impact from your work.',
+      'Contributed to HRMS software development combining both frontend and backend development activities.',
+      'Successfully integrated complex REST APIs and built reusable frontend functionality.'
     ],
   },
 ];
 
 export const projects: Project[] = [
   {
-    tag: 'Project 01',
-    title: 'Project Title',
-    description: 'One or two lines describing the problem it solves and what you built.',
-    technologies: ['Tech 01', 'Tech 02', 'Tech 03'],
-    role: 'e.g., Frontend Developer / Full-stack',
-    features: ['Key feature or highlight', 'Another key feature'],
+    tag: 'Enterprise Application',
+    title: 'HRMS Software',
+    description: 'An HRMS web application with a focus on frontend development and user interface implementation.',
+    technologies: ['Angular', 'TypeScript', 'Tailwind CSS', 'Node.js', 'AdonisJS', 'MySQL'],
+    role: 'Software Engineer',
+    features: [
+      'Developed application screens and reusable UI components using Angular and TypeScript.',
+      'Implemented responsive layouts using Tailwind CSS.',
+      'Integrated frontend components with backend REST APIs.',
+      'Worked with MySQL-backed application functionality and data-driven interfaces.'
+    ],
     codeUrl: '',
     demoUrl: '',
-  },
-  {
-    tag: 'Project 02',
-    title: 'Project Title',
-    description: 'One or two lines describing the problem it solves and what you built.',
-    technologies: ['Tech 01', 'Tech 02', 'Tech 03'],
-    role: 'e.g., Frontend Developer / Full-stack',
-    features: ['Key feature or highlight', 'Another key feature'],
-    codeUrl: '',
-    demoUrl: '',
-  },
-  {
-    tag: 'Project 03',
-    title: 'Project Title',
-    description: 'One or two lines describing the problem it solves and what you built.',
-    technologies: ['Tech 01', 'Tech 02', 'Tech 03'],
-    role: 'e.g., Frontend Developer / Full-stack',
-    features: ['Key feature or highlight', 'Another key feature'],
-    codeUrl: '',
-    demoUrl: '',
-  },
+  }
 ];
 
 export const education: EducationItem = {
-  degree: 'Degree / Course Name',
-  institution: 'Institution / University',
-  year: 'Graduation Year',
-  details: 'Add relevant details here — specialization, notable coursework, projects, or academic achievements.',
+  degree: 'Master of Computer Applications (MCA)',
+  institution: 'ITM Universe, Gwalior',
+  year: '2023 — 2025',
+  details: 'Achieved a CGPA of 9.20 / 10',
 };
 
 export const certifications: Certification[] = [
   {
     icon: 'award',
-    title: 'Certification / Achievement Title',
-    issuer: 'Issuer / Event · Year',
-    description: 'One line about what it covers or why it matters.',
-  },
-  {
-    icon: 'trophy',
-    title: 'Award / Hackathon Title',
-    issuer: 'Organizer · Year',
-    description: 'One line about the accomplishment and what you contributed.',
-  },
-  {
-    icon: 'medal',
-    title: 'Workshop / Achievement Title',
-    issuer: 'Issuer / Event · Year',
-    description: 'One line describing the workshop or achievement.',
-  },
+    title: 'Palo Alto Networks Certification',
+    issuer: 'Palo Alto Networks · 2024',
+    description: 'Professional certification in network security.',
+  }
 ];
 
+export const resumeUrl = ''; // Set this to your resume PDF path, e.g. '/Apeksha-Gupta-Resume.pdf'
+
 export const contactLinks: ContactLink[] = [
-  { icon: 'mail', label: 'Email', value: 'your.email@example.com', href: 'mailto:your.email@example.com' },
-  { icon: 'phone', label: 'Phone', value: '+91 XXXXX XXXXX', href: 'tel:' },
-  { icon: 'linkedin', label: 'LinkedIn', value: 'linkedin.com/in/your-profile', href: '#' },
-  { icon: 'github', label: 'GitHub', value: 'github.com/your-username', href: '#' },
-  { icon: 'globe', label: 'Other', value: 'Other professional link', href: '#' },
+  { icon: 'mail', label: 'Email', value: 'guptaap783@gmail.com', href: 'mailto:guptaap783@gmail.com' },
+  { icon: 'phone', label: 'Phone', value: '+91 91311 38550', href: 'tel:+919131138550' },
+  { icon: 'linkedin', label: 'LinkedIn', value: 'Apeksha Gupta', href: 'https://www.linkedin.com/in/apeksha-gupta-783b67260' },
 ];
 
 export const socialLinks: SocialLink[] = [
-  { icon: 'github', label: 'GitHub', href: '#' },
-  { icon: 'linkedin', label: 'LinkedIn', href: '#' },
-  { icon: 'mail', label: 'Email', href: '#' },
+  { icon: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/apeksha-gupta-783b67260' },
+  { icon: 'mail', label: 'Email', href: 'mailto:guptaap783@gmail.com' },
 ];
 
-export const CONTACT_EMAIL = 'your.email@example.com';
+export const CONTACT_EMAIL = 'guptaap783@gmail.com';

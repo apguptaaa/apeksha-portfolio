@@ -33,9 +33,13 @@ export default function Footer({ onPlaceholderClick }: FooterProps) {
                 href={social.href}
                 className="icon-btn"
                 aria-label={social.label}
+                target={social.href !== '#' ? '_blank' : undefined}
+                rel={social.href !== '#' ? 'noopener noreferrer' : undefined}
                 onClick={(e) => {
-                  e.preventDefault();
-                  onPlaceholderClick(`Add your ${social.label} link here.`);
+                  if (social.href === '#') {
+                    e.preventDefault();
+                    onPlaceholderClick(`Add your ${social.label} link here.`);
+                  }
                 }}
               >
                 {SOCIAL_ICONS[social.icon]}

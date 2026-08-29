@@ -22,7 +22,7 @@ export default function Skills() {
           </p>
         </div>
 
-        <div className="skills-grid">
+        <div className={`skills-grid ${skills.length === 1 ? 'grid-1' : skills.length === 2 ? 'grid-2' : ''}`}>
           {skills.map((skill, i) => (
             <article
               className="card skill-card reveal"
